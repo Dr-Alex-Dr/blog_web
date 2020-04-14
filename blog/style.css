@@ -1,0 +1,226 @@
+body
+{
+	color: #8f8f8f;
+	font: 12px Oswald, sans-serif;
+	background-color: #f8f8f8;
+	border-top: 5px solid #7E7E7E;
+	margin: 0;
+}
+input[type="text"]
+{
+	background-color: #f3f3f3;
+	border: 1px solid #E7E7E7;
+	height: 30px;
+	color: #B2B2B2;
+	padding: 0 10px;
+	vertical-align: top;
+}
+button
+{
+	color: #fff;
+	background-color: #29c5e6;
+	border: none;
+	height: 32px;
+	font-family: Oswald, sans-serif;
+}
+
+p
+{
+	margin: 20px 0;
+}
+
+#container
+{
+	max-width: 960px;
+	margin: auto;
+
+}
+header
+{
+	padding: 20px 0;
+}
+
+form[name="search"]
+{
+	float: right;
+}
+
+nav a 
+{
+	text-decoration: none;
+
+}
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+nav li
+{
+	list-style-position: inside;
+	font: 14px Oswald, sans-serif;
+	padding: 10px;
+}
+.top-menu 
+{
+	
+	background-color: #F3F3F3;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #E7E7E7;
+	
+	margin: 0;
+}
+.top-menu li
+{
+	width: 12.5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.top-menu li:hover 
+{
+	background: #29c5e6;
+	color: #fff;
+}
+
+.top-menu a 
+{
+	color: #B2B2B2;
+	
+}
+
+#heading
+{
+	margin: 30px 30px;
+
+}
+h1
+{
+	margin: 0;
+	padding: 0;
+	font: 17px 'Inria Sans', sans-serif;
+}
+
+section
+{
+	margin-left: 280px;
+	padding-bottom: 50px;
+}
+
+nav
+{
+	border: 1px solid #E7E7E7;	
+}
+aside
+{
+	
+	float: left;
+	width: 250px;
+}
+
+.aside-menu
+{
+	display: inline-block;
+	width: 92%;
+}
+.aside-menu:firts-child
+{
+	border: none;
+}
+
+.aside-menu li 
+{
+	width: 100%;
+
+	font: 14px Oswald, sans-serif;
+	list-style-type: square;
+	margin: 0;
+	padding: 15px 10px;
+
+	background-color: #F3F3F3;
+	border-top: 1px solid #E7E7E7;
+	
+
+}
+.aside-menu a
+{
+	
+	display: inline-block;
+	width: 90%;
+
+	color: #8F8F8F;
+}
+.but:hover > .back
+{
+	transition-duration: .2s;
+	display: inline-block;
+
+}
+.but:hover
+{
+	padding-bottom: 0;
+}
+
+.aside-menu a:hover
+{
+	color: #29C5E6;
+}
+
+.back li:hover > a
+{
+	color: #29C5E6;
+}
+.back li:hover
+{
+	background-color: #E7E7E7;
+}
+.back 
+{
+	transition: 3s;
+	margin-left: -10px;
+	display: none;
+	padding-top: 15px;
+	padding-bottom: 0;
+	max-width: 250px;
+	width: 91.5%;
+}
+
+.back li
+{
+	margin: 0;
+	padding: 10px 20px;
+	list-style-type: none;
+	width: 100%;
+
+}
+
+.back a
+{
+	display: block;
+	width: 100%;
+}
+
+.content
+{
+	max-width: 250;
+	width: 90%;
+	background-color: #29C5E6;
+	margin: 45px auto;
+	color: #F3F3F3;
+	font-weight: 200;
+	padding: 12px 12px;
+}
+
+.Clip
+{
+	margin: 0 10px;
+}
+.web
+{
+
+}
