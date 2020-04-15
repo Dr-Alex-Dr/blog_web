@@ -208,19 +208,44 @@ aside
 .content
 {
 	max-width: 250;
-	width: 90%;
+	width: 90.6%;
 	background-color: #29C5E6;
-	margin: 45px auto;
+	margin: 30px auto 0 auto;
 	color: #F3F3F3;
 	font-weight: 200;
 	padding: 12px 12px;
 }
 
+#not:hover
+{
+	padding-bottom: 15px;
+}
+
 .Clip
 {
-	margin: 0 10px;
+	margin: 10px 10px 8px 10px;
 }
 .web
 {
+	background-color: #F3F3F3;
+	border: 1px solid #E7E7E7;
+}
+/* -----------------*/
+
+
+.set
+{
+	background-color: #29C5E6;
+	color: #FFFFFF;
+	padding: 10px  9px 10px;
+	font: 30px Oswald, sans-serif;
+	font-weight: 200;
+}
+
+.set_text
+{
+	font: 13px 'Inria Sans', sans-serif;
+	margin: 13px auto;
+	line-height: 18px;
 
 }
