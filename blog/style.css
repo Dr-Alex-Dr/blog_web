@@ -247,5 +247,47 @@ aside
 	font: 13px 'Inria Sans', sans-serif;
 	margin: 13px auto;
 	line-height: 18px;
+}
+
+figure
+{	
+	margin: 0;
+	padding: 0;
+
+	display: block;
+	width: 50%;
+	float: left;
+	
+	text-align: center;
+	
 
 }
+
+figcaption
+{
+
+	margin-bottom: 5px;
+	color: #8F8F8F;
+	font: 12px Oswald, sans-serif;
+}
+
+.back_set
+{
+
+	float: left;
+
+}
+
+.back_set1
+{
+	float: right;
+}
+
+.p_set
+{
+	float: top;
+	padding: 0;
+	padding-top: 12px;
+	margin: 0;
+}
+
