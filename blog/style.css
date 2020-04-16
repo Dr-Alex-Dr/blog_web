@@ -237,7 +237,7 @@ aside
 {
 	background-color: #29C5E6;
 	color: #FFFFFF;
-	padding: 10px  9px 10px;
+	padding: 7px  9px 7px;
 	font: 30px Oswald, sans-serif;
 	font-weight: 200;
 }
@@ -266,6 +266,7 @@ figure
 figcaption
 {
 
+	float: bottom;
 	margin-bottom: 5px;
 	color: #8F8F8F;
 	font: 12px Oswald, sans-serif;
@@ -291,3 +292,69 @@ figcaption
 	margin: 0;
 }
 
+
+.set2
+{
+	background-color: #29C5E6;
+	color: #FFFFFF;
+	padding: 7px  9px 7px;
+	font: 30px Oswald, sans-serif;
+	font-weight: 200;
+}
+
+.fig
+{
+	height: 440px;
+}
+
+.set_text2
+{
+	font: 13px 'Inria Sans', sans-serif;
+	margin: 13px auto;
+	line-height: 18px;
+}
+
+.set3
+{
+	margin-top: 22px;
+	background-color: #29C5E6;
+	color: #FFFFFF;
+	padding: 7px  9px 7px;
+	font: 30px Oswald, sans-serif;
+	font-weight: 200;
+}
+
+.count
+{
+	display: flex;
+	flex-direction: row;
+
+}
+.cube
+{
+	margin-left: 45px;
+	max-width: 20%;
+	margin-top: 20px;
+}
+.cube:first-child
+{
+	margin-left: 0;
+	max-width: 20%;
+	margin-top: 20px;
+}
+
+.cube_text
+{
+	margin-top: 3px; 
+	padding-left: 1px;
+	font: 16px  Oswald, sans-serif;
+	color: #8F8F8F;
+	font-weight: 100;
+}
+
+.foot
+{
+	max-height: 112px;
+	height: 112px;
+	background-color: #7E7E7E;
+}
