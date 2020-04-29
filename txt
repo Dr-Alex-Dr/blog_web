@@ -1,0 +1,7 @@
+let Day = 2;
+let Month = 'May';
+let Year = 1980;
+
+document.getElementsByTagName('option') [0].innerHTML = `${Day}`;
+document.getElementsByClassName('c0158') [3].getElementsByTagName('option') [0].innerHTML = `${Month}`;
+document.getElementsByClassName('c0179') [2].getElementsByTagName('option') [0].innerHTML = `${Year}`;
