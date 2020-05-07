@@ -1,20 +1,25 @@
 const MongoClient = require("mongodb").MongoClient;
-
-
-const mongoClient = new MongoClient("mongodb://localhost:27017/", {useNewUrlParser: true});
-mongoClient.connect(function (err, client)
-{
-
-	const db = client.db("usersdb");
-	const collection = db.collection("users");
-	let user = {name: "Tom", age: 23};
-	collection.insertOne(user, function(err, result)
-	{
-		if (err)
-		{
-			return console.log(err);
-		}
-		console.log(result.ops);
-		client.close();
-	});
+   
+const url = "mongodb://localhost:27017/";
+const mongoClient = new MongoClient(url, { useNewUrlParser: true });
+  
+let users = [{name: "Bob", age: 34} , {name: "Alice", age: 21}, {name: "Tom", age: 45}]; 
+mongoClient.connect(function(err, client){
+     
+    if(err) return console.log(err);
+      
+    const db = client.db("usersdb");
+    const col = db.collection("users");
+    col.insertMany(users, function(err, results){
+             
+        col.findOneAndUpdate(
+            {age: 21}, // критерий выборки
+            { $set: {age: 25}}, // параметр обновления
+            function(err, result){
+                 
+                console.log(result);
+                client.close();
+            }
+        );
+    });
 });
