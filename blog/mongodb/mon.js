@@ -1,25 +1,25 @@
-const MongoClient = require("mongodb").MongoClient;
-   
-const url = "mongodb://localhost:27017/";
-const mongoClient = new MongoClient(url, { useNewUrlParser: true });
-  
-let users = [{name: "Bob", age: 34} , {name: "Alice", age: 21}, {name: "Tom", age: 45}]; 
-mongoClient.connect(function(err, client){
-     
-    if(err) return console.log(err);
-      
-    const db = client.db("usersdb");
-    const col = db.collection("users");
-    col.insertMany(users, function(err, results){
-             
-        col.findOneAndUpdate(
-            {age: 21}, // критерий выборки
-            { $set: {age: 25}}, // параметр обновления
-            function(err, result){
-                 
-                console.log(result);
-                client.close();
-            }
-        );
-    });
-});
+const express = require('express');
+const MongoClient = require('mongodb').MongoClient;
+const objectId = require('mongodb').ObjectID;
+
+const app = express();
+const jsonParser = express.json();
+
+const mongoClient = new MongoClient("mongodb://localhost:27017/", {useNewUrlParser: true});
+
+let dbClient;
+
+app.use(express.static(dirname__ + "blog"));
+
+mongoClient.connect(function (err, client)
+{
+    if (err)
+    {
+        return console.log(err);
+    }
+    dbClient = client;
+    app.local.collection = client.db("usersdb").collection("users");
+    app.listen(3000, function() {
+        console.log("Сервер ожидает подключения...");
+    })
+})
